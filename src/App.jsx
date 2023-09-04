@@ -20,10 +20,10 @@ function App() {
   const [temp, setTemp] = useState()
 
   const changeBackground = () => {
-    if (weather?.weather[0].icon === '50d') {
+    if (weather?.weather[0].icon === '50n') {
       Image = Image1
     }
-    else if (weather?.weather[0].icon === '09d') {
+    else if (weather?.weather[0].icon === '09n' || '10n' || '11n') {
       Image = Image2
     }
     else if (weather?.weather[0].icon === '01n') {
@@ -32,7 +32,7 @@ function App() {
     else if (weather?.weather[0].icon === '02n' || '03n' || '04n') {
       Image = Image4
     }
-    else if (weather?.weather[0].icon === '13d') {
+    else if (weather?.weather[0].icon === '50d') {
       Image = Image5
     }
     else if (weather?.weather[0].icon === '01d') {
@@ -41,7 +41,7 @@ function App() {
     else if (weather?.weather[0].icon === '02d' || '03d' || '04d') {
       Image = Image7
     }
-    else if (weather?.weather[0].icon === '10d' || '11d') {
+    else if (weather?.weather[0].icon === '09d' || '10d' || '11d') {
       Image = Image7
     }
     return Image
